@@ -1,0 +1,25 @@
+header {
+  background-color: #6d6e70;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+hr{
+  border-color: #9f9fa3;
+}
+
+ul>li {
+  border-right: 1px solid #9f9fa3;
+}
+
+li>a {
+  color: #eee;
+  text-decoration: none;
+}
+
+ul>li:last-child {
+  border-right: none;
+}
