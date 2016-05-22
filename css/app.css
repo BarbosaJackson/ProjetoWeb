@@ -1,5 +1,5 @@
-header {
-  background-color: #6d6e70;
+.title-bar, .top-bar, .off-canvas-wrapper {
+  background: #6d6e70;
 }
 
 h1 {
@@ -7,11 +7,13 @@ h1 {
   color: #eee;
 }
 
-hr{
+hr {
+  margin-top: 0;
   border-color: #9f9fa3;
 }
 
 ul>li {
+  background: #6d6e70;
   border-right: 1px solid #9f9fa3;
 }
 
@@ -22,4 +24,8 @@ li>a {
 
 ul>li:last-child {
   border-right: none;
+}
+
+.title-bar-desc {
+  padding: 1em;
 }
