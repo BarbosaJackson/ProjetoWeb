@@ -1,7 +1,7 @@
 # Descrição do projeto
 
 ## Nome
-	Busca ligeiro
+	Busca Rápida
 
 ## Serviços apresentados:
 
