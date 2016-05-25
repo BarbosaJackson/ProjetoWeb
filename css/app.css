@@ -11,6 +11,54 @@ h1 {
   color: #eee;
 }
 
+h2{
+  font-size: 1.8rem;
+  margin-bottom: 0em;
+}
+
+section>hr{
+  border-width: 0.13em;
+}
+
+.variedades h2{
+  color: #7CB342;
+}
+
+.variedades hr{
+  border-color: #7CB342;
+}
+
+.saude h2{
+  color: #F44336;
+}
+.saude hr{
+  border-color: #F44336;
+}
+
+
+.transporte h2{
+  color: #2196F3;
+
+}
+
+.transporte hr{
+ border-color: #2196F3;
+}
+
+
+.alimentacao h2{
+  color: #795548;
+}
+
+.alimentacao hr{
+  border-color: #795548;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0em;
+}
+
 hr {
   margin-top: 0;
   border-color: #9f9fa3;
