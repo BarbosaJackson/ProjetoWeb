@@ -61,17 +61,21 @@ h3 {
 
 hr {
   margin-top: 0;
-  border-color: #9f9fa3;
+  border-color: rgba(255,255,255,0.3);
 }
 
 ul>li {
   background: #00a4e4;
-  border-right: 1px solid #9f9fa3;
+  border-right: 1px solid rgba(255,255,255,0.3);
 }
 
 li>a {
   color: #eee;
   text-decoration: none;
+}
+
+.desc>li {
+  background: #fff;
 }
 
 ul>li:last-child {
