@@ -1,0 +1,87 @@
+.title-bar, .top-bar, .off-canvas-wrapper {
+  background: #00a4e4; /*#6d6e70*/
+}
+
+.off-canvas-content {
+    box-shadow: none;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+h2{
+  font-size: 1.8rem;
+  margin-bottom: 0em;
+}
+
+section>hr{
+  border-width: 0.13em;
+}
+
+.variedades h2{
+  color: #7CB342;
+}
+
+.variedades hr{
+  border-color: #7CB342;
+}
+
+.saude h2{
+  color: #F44336;
+}
+.saude hr{
+  border-color: #F44336;
+}
+
+
+.transporte h2{
+  color: #2196F3;
+
+}
+
+.transporte hr{
+ border-color: #2196F3;
+}
+
+
+.alimentacao h2{
+  color: #795548;
+}
+
+.alimentacao hr{
+  border-color: #795548;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0em;
+}
+
+hr {
+  margin-top: 0;
+  border-color: rgba(255,255,255,0.3);
+}
+
+ul>li {
+  background: #00a4e4;
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+li>a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.desc>li {
+  background: #fff;
+}
+
+ul>li:last-child {
+  border-right: none;
+}
+
+.title-bar-desc {
+  padding: 1em;
+}
