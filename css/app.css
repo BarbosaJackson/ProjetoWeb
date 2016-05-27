@@ -1,9 +1,29 @@
+@font-face{
+  font-family: 'Lato Semibold';
+  src: url(../fonts/Lato-Semibold.ttf);
+}
+
 .title-bar, .top-bar, .off-canvas-wrapper {
   background: #00a4e4; /*#6d6e70*/
 }
 
+.title-bar-desc {
+  padding: 1em;
+}
+
 .off-canvas-content {
-    box-shadow: none;
+  box-shadow: none;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: 'Lato Semibold', Arial;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 h1 {
@@ -12,46 +32,8 @@ h1 {
 }
 
 h2{
-  font-size: 1.8rem;
-  margin-bottom: 0em;
-}
-
-section>hr{
-  border-width: 0.13em;
-}
-
-.variedades h2{
-  color: #7CB342;
-}
-
-.variedades hr{
-  border-color: #7CB342;
-}
-
-.saude h2{
-  color: #F44336;
-}
-.saude hr{
-  border-color: #F44336;
-}
-
-
-.transporte h2{
-  color: #2196F3;
-
-}
-
-.transporte hr{
- border-color: #2196F3;
-}
-
-
-.alimentacao h2{
-  color: #795548;
-}
-
-.alimentacao hr{
-  border-color: #795548;
+  font-size: 1.4rem;
+  margin-bottom: -0.1em;
 }
 
 h3 {
@@ -64,6 +46,14 @@ hr {
   border-color: rgba(255,255,255,0.3);
 }
 
+section>hr{
+  border-width: 0.13em;
+}
+
+h2>i {
+  color: #fff;
+}
+
 ul>li {
   background: #00a4e4;
   border-right: 1px solid rgba(255,255,255,0.3);
@@ -74,6 +64,10 @@ li>a {
   text-decoration: none;
 }
 
+li>a:hover {
+  color: #fff;
+}
+
 .desc>li {
   background: #fff;
 }
@@ -82,6 +76,63 @@ ul>li:last-child {
   border-right: none;
 }
 
-.title-bar-desc {
-  padding: 1em;
+.alimentacao h2{
+  color: #795548;
+}
+
+.saude h2{
+  color: #F44336;
+}
+
+.variedades h2{
+  color: #7CB342;
+}
+
+.transporte h2{
+  color: #2196F3;
+
+}
+
+.alimentacao hr{
+  border-color: #795548;
+}
+
+.transporte hr{
+ border-color: #2196F3;
+}
+
+.saude hr{
+  border-color: #F44336;
+}
+
+.variedades hr{
+  border-color: #7CB342;
+}
+
+.fa-alimentacao {
+  background: #795548;
+}
+
+.fa-saude {
+  background: #F44336;
+}
+
+.fa-transporte {
+  background: #2196F3;
+}
+.fa-variedades {
+  background: #7CB342;
+}
+
+.fa-menu-home {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 0.8em;
+  padding: 0.4em;
+  margin-bottom: 0;
+  margin-right: 8px; 
+}
+
+#googleMap {
+  margin-top: 1em;
 }
