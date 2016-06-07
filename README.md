@@ -280,17 +280,11 @@ Telefone:(82) 3521-1944
 #### Horário:
 
 segunda-feira 08:00–20:00
-
 terça-feira 08:00–20:00
-
 quarta-feira  08:00–20:00
-
 quinta-feira  08:00–20:00
-
 sexta-feira 08:00–20:00
-
 sábado  08:00–20:00
-
 domingo 08:00–20:00
 
 
@@ -305,17 +299,11 @@ Telefone:(82) 3521-2491
 #### Horário:
 
 segunda-feira 08:00–20:00
-
 terça-feira 08:00–20:00
-
 quarta-feira  08:00–20:00
-
 quinta-feira  08:00–20:00
-
 sexta-feira 08:00–20:00
-
 sábado  08:00–20:00
-
 domingo 08:00–20:00
 
 
@@ -323,25 +311,20 @@ domingo 08:00–20:00
 ### Farmácia do Trabalhador: 
 
 
-Endereço: Pc Marq Silva, 3, Arapiraca - AL, 57300-330
+R. Prof. Domingos Correia, 511 - Centro,Arapiraca - AL
 
-Telefone:(82) 3521-1548
+Telefone:(82) 3481-5646
 
 #### Horário:
 
-segunda-feira 08:00–20:00
 
-terça-feira 08:00–20:00
-
-quarta-feira  08:00–20:00
-
-quinta-feira  08:00–20:00
-
-sexta-feira 08:00–20:00
-
-sábado  08:00–20:00
-
-domingo 08:00–20:00
+segunda-feira 07:00–21:00
+terça-feira 07:00–21:00
+quarta-feira 07:00–21:00
+quinta-feira 07:00–21:00
+sexta-feira 07:00–21:00
+sábado 07:00–21:00
+domingo 07:00–13:00
 
 
 

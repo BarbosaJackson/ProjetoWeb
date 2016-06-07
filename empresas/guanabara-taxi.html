@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bob's | Busca Rápida</title>
+	<title>Guanabara Táxi | Busca Rápida</title>
 	<link rel="stylesheet" href="../css/foundation.min.css">
 	<link rel="stylesheet" href="../css/font-awesome.min.css">
 	<!-- OWL stylesheet -->
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="../css/app.css">
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
-		var myCenter=new google.maps.LatLng(-9.7532106,-36.6568175);
+		var myCenter=new google.maps.LatLng(-9.7560938,-36.6598072);
 		function initialize()
 		{
 			var mapProp = {
@@ -71,66 +71,63 @@
 			<div class="off-canvas-content" data-off-canvas-content>
 				<div class="row">
 					<div class="small-12">
-						<h2>Bob's Arapiraca</h2>
+						<h2>Guanabara Táxi</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="small-12 medium-6 columns">
 						<p>Lorem ipsum dolor sit amet.</p>
 						<ul class="desc">
-							<li>Categoria: Fast-food</li>
+							<li>Categoria: Transporte</li>
 							<li>Horário de funcionamento:
 								<ul class="sub-list">
-									<li>segunda-feira 10:00–23:00</li>
-									<li>terça-feira 10:00–23:00</li>
-									<li>quarta-feira  10:00–23:00</li>
-									<li>quinta-feira  10:00–23:00</li>
-									<li>sexta-feira 10:00–23:00</li>
-									<li>sábado  10:00–23:00</li>
-									<li>domingo 10:00–23:00</li>
-								</ul>
-							</li>
-							<li>Telefone: (82) 3522-6655</li>
-							<li>Endereço: R. Quinze de Novembro, 233 - Centro, Arapiraca - AL, 57300-340
-							</li>
-						</ul>
+									<li>segunda-feira 24 horas</li>
+									<li>terça-feira 24 horas</li>
+									<li>quarta-feira  24 horas</li>
+									<li>quinta-feira  24 horas</li>
+									<li>sexta-feira 24 horas</li>
+									<li>sábado  24 horas</li>
+									<li>domingo 24 horas</li>
+								</li>
+								<li>Telefone: (82) 3539-0198</li>
+							</ul>
+						</div>
+						<div class="small-12 medium-6 columns">
+							<div class="slider">
+								<div><img src="https://placeholdit.imgix.net/~text?txtsize=60&txt=Busca+R%C3%A1pida&w=700&h=400&txttrack=0" alt=""></div>
+								<div><img src="https://placeholdit.imgix.net/~text?txtsize=60&txt=Busca+R%C3%A1pida&w=700&h=400&txttrack=0" alt=""></div>
+								<div><img src="https://placeholdit.imgix.net/~text?txtsize=60&txt=Busca+R%C3%A1pida&w=700&h=400&txttrack=0" alt=""></div>
+							</div>
+						</div>
+
 					</div>
-					<div class="small-12 medium-6 columns">
-						<div class="slider">
-							<div><img src="https://placeholdit.imgix.net/~text?txtsize=60&txt=Busca+R%C3%A1pida&w=700&h=400&txttrack=0" alt=""></div>
-							<div><img src="https://placeholdit.imgix.net/~text?txtsize=60&txt=Busca+R%C3%A1pida&w=700&h=400&txttrack=0" alt=""></div>
-							<div><img src="https://placeholdit.imgix.net/~text?txtsize=60&txt=Busca+R%C3%A1pida&w=700&h=400&txttrack=0" alt=""></div>
+					<div class="row">
+						<div class="small-12 columns">
+							<div id="googleMap" style="width:100%;height:380px;"></div>
 						</div>
 					</div>
 
 				</div>
-				<div class="row">
-					<div class="small-12 columns">
-						<div id="googleMap" style="width:100%;height:380px;"></div>
-					</div>
-				</div>
-
 			</div>
 		</div>
-	</div>
-	<script src="../js/vendor/jquery.js"></script>
-	<script src="../js/owl.carousel.min.js"></script>
-	<script src="../js/vendor/what-input.js"></script>
-	<script src="../js/vendor/foundation.js"></script>
-	<script src="../js/app.js"></script>
-	<script>
-		$(document).ready(function() {
-			$(".slider").owlCarousel({
-				autoPlay : 3000,
-				stopOnHover : true,
-				navigation:true,
-				paginationSpeed : 1000,
-				goToFirstSpeed : 2000,
-				singleItem : true,
-				autoHeight : true,
-				transitionStyle:"fade"
+		<script src="../js/vendor/jquery.js"></script>
+		<script src="../js/owl.carousel.min.js"></script>
+		<script src="../js/vendor/what-input.js"></script>
+		<script src="../js/vendor/foundation.js"></script>
+		<script src="../js/app.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".slider").owlCarousel({
+					autoPlay : 3000,
+					stopOnHover : true,
+					navigation:true,
+					paginationSpeed : 1000,
+					goToFirstSpeed : 2000,
+					singleItem : true,
+					autoHeight : true,
+					transitionStyle:"fade"
+				});
 			});
-		});
-	</script>
-</body>
-</html>
+		</script>
+	</body>
+	</html>
