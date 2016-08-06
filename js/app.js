@@ -1,7 +1,14 @@
 $(document).foundation()
 
 window.onload = function() {
-	document.getElementById('msg').visibility = "hidden";
+	v();
+}
+
+function v(){
+	document.getElementsByName('alert')[0].visibility = 'hidden';
+	document.getElementsByName('alert')[1].visibility = 'hidden';
+	document.getElementsByName('alert')[2].visibility = 'hidden';
+	document.getElementsByName('alert')[3].visibility = 'hidden';
 }
 
 function verificaVazios(campo){

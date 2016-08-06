@@ -59,7 +59,8 @@
 	<br>
 	<div class="row">
 		<div class="small-12 medium-6 columns">
-			<form onsubmit="return valida_pt2()" action="cadastro_sucesso.html">
+			
+			<form  onsubmit="return valida_pt2()" action="cadastro_sucesso.html">
 				<div class="row">
 					<div class="medium-8 columns">						
 						<label id = "msg"></label>
@@ -71,20 +72,44 @@
 							<input type="text" id="rua">
 						</label>
 					</div>
+					
+					<div class="medium-6 columns">
+						<div class="callout alert" >
+                           <p>Preencha o campo Rua, Brother!!!</p>
+                        </div>
+					</div>
 				</div>
+				
 				<div class="row">
 					<div class="medium-6 columns">						
 						<label> Bairro
 							<input type="text" id="bairro">
 						</label>
 					</div>
+					
+					<div class="medium-6 columns">
+					
+						<div class="callout alert" >
+                           <p>Preencha o campo Bairro, Brother!!!</p>
+                        </div>
+						
+					</div>
 				</div>
+				
 				<div class="row">
 					<div class="medium-6 columns">						
 						<label> Número
 							<input type="number" id="num" min = 0 value="0">
 						</label>
 					</div>
+					
+					<div class="medium-6 columns">
+						<div class="callout alert" >
+                           <p>Preencha o campo Número, Brother!!!</p>
+                        </div>
+						
+					</div>
+					
 				</div>
 				<div class="row">
 					<div class="medium-6 columns">						
@@ -92,7 +117,14 @@
 							<input type="text" id="cep">
 						</label>
 					</div>
+					<div class="medium-6 columns">	
+						<div class="callout alert" >
+                           <p>Preencha o campo Bairro, Brother!!!</p>
+                        </div>
+					</div>
+					
 				</div>
+				
 				<div>
 					<div class="medium-6 columns">						
 						<div class="input-group-button">
@@ -103,10 +135,13 @@
 			</form>
 		</div>
 	</div>
+
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/vendor/what-input.js"></script>
 	<script src="js/vendor/foundation.js"></script>
 	<script src="js/app.js"></script>
+	
+	
 </body>
 </html>

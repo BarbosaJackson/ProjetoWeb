@@ -61,15 +61,16 @@
 		<div class="small-12 medium-6 columns">
 			<form onsubmit="return verificarCampos()" action="cadastro_pt2.html">
 				<div class="row">
-					<div class="medium-8 columns">						
-						<label id = "msg"></label>
-					</div>
-				</div>
-				<div class="row">
 					<div class="medium-6 columns">						
 						<label> Nome
 							<input type="text" id="nomeEmpresa">
 						</label>
+					</div>
+					
+					<div class="medium-6 columns" id="alert_nome" name="alert">	
+						<div class="callout alert" >
+                           <p>Preencha o campo Nome, Brother!!!</p>
+                        </div>
 					</div>
 				</div>
 
@@ -91,19 +92,39 @@
 							<textarea id="desc"></textarea>
 						</label>
 					</div>
+					
+					<div class="medium-6 columns" name="alert">
+						<div class="callout alert">
+                           <p>Preencha o campo Descrição da Empresa, Brother!!!</p>
+                        </div>
+					</div>
 				</div>
+				
 				<div class="row">
 					<div class="medium-6 columns">
 						<label> CNPJ
 							<input type="text" id="cnpj">
 						</label>
 					</div>
+					
+					<div class="medium-6 columns" name="alert">
+					    <div class="callout alert">
+                           <p>Preencha o campo CNPJ, Brother!!!</p>
+                        </div>
+					</div>
 				</div>
+				
 				<div class="row">
 					<div class="medium-6 columns">
+						
 						<label> Senha
 							<input type="password" id="pass">
 						</label>
+					</div>
+					<div class="medium-6 columns" name="alert">
+						<div class="callout alert" >
+                           <p>Preencha o campo Senha, Brother!</p>
+                        </div>
 					</div>
 				</div>
 				<div class="row">
