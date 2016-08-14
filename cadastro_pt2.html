@@ -52,84 +52,55 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="small-12 medium-6 columns">
-			<h2>Cadastro da empresa | Endereço</h2>
+		<div class="small-12 columns">
+			<h2>Cadastro da empresa | Endereço e Contato</h2>
 		</div>
 	</div>
 	<br>
 	<div class="row">
-		<div class="small-12 medium-6 columns">
-			
-			<form  onsubmit="return valida_pt2()" action="cadastro_sucesso.html">
+		<div class="small-12 columns">
+			<h3>Endereço</h3>
+			<form onsubmit="return validaPg2()" action="index.html">
 				<div class="row">
-					<div class="medium-8 columns">						
-						<label id = "msg"></label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="medium-6 columns">						
+					<div class="small-12 medium-6 columns">	 					
 						<label> Rua
-							<input type="text" id="rua">
+							<input type="text" id="rua" required>
 						</label>
 					</div>
-					
-					<div class="medium-6 columns">
-						<div class="callout alert" >
-                           <p>Preencha o campo Rua, Brother!!!</p>
-                        </div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="medium-6 columns">						
+					<div class="small-12 medium-2 columns">						
 						<label> Bairro
-							<input type="text" id="bairro">
+							<input type="text" id="bairro" required>
 						</label>
 					</div>
-					
-					<div class="medium-6 columns">
-					
-						<div class="callout alert" >
-                           <p>Preencha o campo Bairro, Brother!!!</p>
-                        </div>
-						
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="medium-6 columns">						
+					<div class="small-4 medium-1 columns">						
 						<label> Número
-							<input type="number" id="num" min = 0 value="0">
+							<input type="number" id="num" min = 0 value="0" onkeyup=maskNumber(this) required>
+						</label>
+					</div>			
+					<div class="small-8 medium-3 columns">						
+						<label> CEP
+							<input type="text" id="cep" maxlength="9" onkeyup="maskCep(this)" required>
 						</label>
 					</div>
-					
-					<div class="medium-6 columns">
-						<div class="callout alert" >
-                           <p>Preencha o campo Número, Brother!!!</p>
-                        </div>
-						
+				</div>
+
+				<h3>Contato</h3>
+
+				<div class="row">
+					<div class="small-12 medium-4 columns">
+						<label> Telefone
+								<input type="tel" id="tel" onkeyup=maskTelefone(this) maxlength="14" required>
+							</label>
 					</div>
-					
+					<div class="small-12 medium-8 columns">
+						<label> E-mail
+								<input type="email" id="email" required>
+							</label>
+					</div>
 				</div>
 				<div class="row">
-					<div class="medium-6 columns">						
-						<label> CEP
-							<input type="text" id="cep">
-						</label>
-					</div>
-					<div class="medium-6 columns">	
-						<div class="callout alert" >
-                           <p>Preencha o campo Bairro, Brother!!!</p>
-                        </div>
-					</div>
-					
-				</div>
-				
-				<div>
-					<div class="medium-6 columns">						
-						<div class="input-group-button">
-							<input type="submit" class="button" value="Finalizar">
-						</div>
+					<div class="small-6 columns">
+						<input type="submit" class="button" value="Cadastrar">
 					</div>
 				</div>
 			</form>

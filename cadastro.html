@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
@@ -58,73 +58,66 @@
 	</div>
 	<br>
 	<div class="row">
-		<div class="small-12 medium-6 columns">
-			<form onsubmit="return verificarCampos()" action="cadastro_pt2.html">
+		<div class="small-12 columns">
+			<form onsubmit="return validaPg1()" action="cadastro_pt2.html">
+				<h3>Público</h3>
 				<div class="row">
-					<div class="medium-6 columns">						
+					<div class="medium-4 columns">						
 						<label> Nome
-							<input type="text" id="nomeEmpresa">
+							<input type="text" id="nomeEmpresa" required>
 						</label>
 					</div>
-					
-					<div class="medium-6 columns" id="alert_nome" name="alert">	
-						<div class="callout alert" >
-                           <p>Preencha o campo Nome, Brother!!!</p>
-                        </div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="medium-6 columns">
+					<div class="medium-4 columns">
 						<label>Tipo de empresa
-							<select id="tipoEmpresa">
+							<select id="tipoEmpresa" required>
 								<option value="Alimentacao">Alimentação</option>
 								<option value="Transporte">Transporte</option>
 								<option value="Saude">Saúde</option>
 							</select>
 						</label>
 					</div>
+					<div class="medium-4 columns">						
+						<label> Horário de atendimento (HI:MI-HF:MF)
+							<input type="text" id="horario" onkeyup=maskHora(this) maxlength="11" required>
+						</label>
+					</div>
 				</div>
 
 				<div class="row">
-					<div class="medium-6 columns">
-						<label> Descrição da empresa
-							<textarea id="desc"></textarea>
+					<div class="small-6 columns">
+						<label> Descrição curta
+							<textarea id="desc" required></textarea>
 						</label>
 					</div>
-					
-					<div class="medium-6 columns" name="alert">
-						<div class="callout alert">
-                           <p>Preencha o campo Descrição da Empresa, Brother!!!</p>
-                        </div>
+					<div class="small-6 columns">
+						<label> Descrição completa
+							<textarea id="desc_completa" required></textarea>
+						</label>
 					</div>
 				</div>
-				
+				<h3>Privado</h3>
 				<div class="row">
-					<div class="medium-6 columns">
+					<div class="medium-2 columns">
 						<label> CNPJ
-							<input type="text" id="cnpj">
+							<input type="text" id="cnpj" onkeyup=maskCNPJ(this) maxlength="18" required>
 						</label>
 					</div>
-					
-					<div class="medium-6 columns" name="alert">
-					    <div class="callout alert">
-                           <p>Preencha o campo CNPJ, Brother!!!</p>
-                        </div>
+					<div class="medium-4 columns">
+						<label> Razão Social
+							<input type="text" id="razao" required>
+						</label>
 					</div>
-				</div>
-				
-				<div class="row">
-					<div class="medium-6 columns">
+					<div class="medium-3 columns">
 						
 						<label> Senha
-							<input type="password" id="pass">
+							<input type="password" id="pass" required>
 						</label>
 					</div>
-					<div class="medium-6 columns" name="alert">
-						<div class="callout alert" >
-                           <p>Preencha o campo Senha, Brother!</p>
-                        </div>
+					<div class="medium-3 columns">
+						
+						<label> Confirmar a senha
+							<input type="password" id="pass_confirm" required>
+						</label>
 					</div>
 				</div>
 				<div class="row">

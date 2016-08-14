@@ -1,39 +1,72 @@
 $(document).foundation()
 
-window.onload = function() {
-	v();
+// 57309-010
+// "##.###.###/####-##"
+
+function validaCampos(el, er) {
+	var e = $(el).val().replace(er, '');
+	$(el).val(e);
 }
 
-function v(){
-	document.getElementsByName('alert')[0].visibility = 'hidden';
-	document.getElementsByName('alert')[1].visibility = 'hidden';
-	document.getElementsByName('alert')[2].visibility = 'hidden';
-	document.getElementsByName('alert')[3].visibility = 'hidden';
+function maskNumber(el){
+	validaCampos(el, /[^0-9]/g)
 }
 
-function verificaVazios(campo){
-	return campo != "" && campo != null;
-}
-
-function verificarCampos(){
-	var nome = document.getElementById('nomeEmpresa').value;
-	var desc = document.getElementById('desc').value;
-	var cnpj = document.getElementById('cnpj').value;
-	var senha = document.getElementById('pass').value;
-	if(verificaVazios(nome) && verificaVazios(desc) && verificaVazios(cnpj) && verificaVazios(senha)) {
-		return true;
-	} else {
-		document.getElementById('msg').visibility = "hidden";
-		document.getElementById('msg').innerHTML = "Erro, preencha todos os campos, por favor!";
-		return false;
+function maskTelefone(el) {
+	validaCampos(el, /[^0-9\-\(\)]/g);
+	var e = $(el).val();
+	if (e.length == 1) {
+		$(el).val('('+e);
+	}
+	if(e.length == 3){
+		$(el).val(e+')');	
+	}
+	if(e.length == 9){
+		$(el).val(e+'-');
 	}
 }
 
-function valida_pt2(){
-	var rua = document.getElementById('rua').value;
-	var bairro = document.getElementById('bairro').value;
-	var num = document.getElementById('num').value;
-	var cep = document.getElementById('cep').value;
+function maskCNPJ(el){
+	validaCampos(el, /[^0-9-\.\\\-]/g);
+	var e = $(el).val();
+	if(e.length == 2 || e.length == 6) {
+		$(el).val(e + ".");
+	} else if(e.length == 10) {
+		$(el).val(e + "\\");
+	} else if(e.length == 15) {
+		$(el).val(e + "-");
+	}
+}
 
-	return verificaVazios(rua) && verificaVazios(bairro) && verificaVazios(num) && verificaVazios(cep);
+function maskHora(el){
+	validaCampos(el, /[^0-9-\:\-]/g)
+	var e = $(el).val();
+	if(e.length == 2 || e.length == 8){
+		$(el).val(e + ":");
+	} else if(e.length == 5){
+		$(el).val(e + "-");
+	}
+}
+
+function maskCep(el){
+	validaCampos(el, /[^0-9\-]/g)
+	var e = $(el).val();
+	if(e.length == 5){
+		$(el).val(e + '-');
+	}
+}
+
+function validaPg1(){
+	return verificaSenhas() && document.getElementById('cnpj').value.length === 18 && document.getElementById('horario').value.length == 11;
+}
+function validaPg2(){
+	return document.getElementById('cep').value.length == 9 && document.getElementById('tel').value.length == 14;
+}
+
+function verificaSenhas(){
+	var a, b;
+	a = document.getElementById("pass").value;
+	b = document.getElementById("pass_confirm").value;
+	console.log(a, b);
+	return a == b;	
 }
