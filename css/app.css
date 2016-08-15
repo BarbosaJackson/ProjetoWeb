@@ -82,6 +82,10 @@ ul>li:last-child {
   border-right: none;
 }
 
+.header-title>a {
+  color: #fff;
+}
+
 .alimentacao h2{
   color: #795548;
 }

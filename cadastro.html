@@ -24,7 +24,6 @@
 			<!-- left menu -->
 			<div class="off-canvas position-left" id="menuLeft" data-off-canvas>
 				<ul class="vertical dropdown menu" data-dropdown-menu>
-					<li><a href="cadastro.html"><i></i><span>Cadastro</span></a></li>
 					<li><a href="categorias/alimentacao.html"><i class="fa fa-coffee"></i> <span>Alimentação</span></a></li>
 					<li><a href="categorias/saude.html"><i class="fa fa-heartbeat"></i> <span>Saúde</span></a></li>
 					<li><a href="categorias/transporte.html"><i class="fa fa-taxi"></i> <span>Transporte</span></a></li>
@@ -33,14 +32,13 @@
 			<div id="menu-medium" class="top-bar">
 				<div class="row align-center">
 					<div class="small-12 small-centered columns">
-						<h1><a href="index.html">Busca Rápida</a></h1>
+						<h1 class="header-title"><a href="index.html">Busca Rápida</a></h1>
 					</div>
 				</div>
 				<hr>
 				<div class="row">
 					<div class="menu-centered small-12 columns">
 						<ul class="menu menu-header">
-							<li><a href="cadastro.html"><i></i><span>Cadastro</span></a></li>
 							<li><a href="categorias/alimentacao.html"><i class="fa fa-coffee"></i> <span>Alimentação</span></a></li>
 							<li><a href="categorias/saude.html"><i class="fa fa-heartbeat"></i> <span>Saúde</span></a></li>
 							<li><a href="categorias/transporte.html"><i class="fa fa-taxi"></i> <span>Transporte</span></a></li>
@@ -59,7 +57,7 @@
 	<br>
 	<div class="row">
 		<div class="small-12 columns">
-			<form onsubmit="return validaPg1()" action="cadastro_pt2.html">
+			<form onsubmit="senForm()" action="cadastro_pt2.html">
 				<h3>Público</h3>
 				<div class="row">
 					<div class="medium-4 columns">						
@@ -107,16 +105,10 @@
 							<input type="text" id="razao" required>
 						</label>
 					</div>
-					<div class="medium-3 columns">
+					<div class="medium-6 columns">
 						
 						<label> Senha
 							<input type="password" id="pass" required>
-						</label>
-					</div>
-					<div class="medium-3 columns">
-						
-						<label> Confirmar a senha
-							<input type="password" id="pass_confirm" required>
 						</label>
 					</div>
 				</div>
